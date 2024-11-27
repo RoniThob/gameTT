@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Quiz Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Game Quiz</h1>
+    <div id="question-container">
+      <h2 id="question">Pertanyaan akan muncul di sini</h2>
+      <div id="answers">
+        <button class="answer-btn" onclick="selectAnswer(0)">Pilihan 1</button>
+        <button class="answer-btn" onclick="selectAnswer(1)">Pilihan 2</button>
+        <button class="answer-btn" onclick="selectAnswer(2)">Pilihan 3</button>
+        <button class="answer-btn" onclick="selectAnswer(3)">Pilihan 4</button>
+      </div>
+    </div>
+    <div id="result" style="display: none;">
+      <h2>Hasil Akhir:</h2>
+      <p id="score"></p>
+      <button id="retry-btn" onclick="retryQuiz()" style="display: none;">Ulangi Kuis</button>
+    </div>
+    <div id="feedback" style="display: none;"></div>
+  </div>
+  <script src="scrip.js"></script>
+</body>
+</html>
